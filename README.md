@@ -1,7 +1,7 @@
 [![license](https://img.shields.io/github/license/micro-os-plus/devices-cortexa-xpack)](https://github.com/micro-os-plus/devices-cortexa-xpack/blob/xpack/LICENSE)
 [![CI on Push](https://github.com/micro-os-plus/devices-cortexa-xpack/workflows/CI%20on%20Push/badge.svg)](https://github.com/micro-os-plus/devices-cortexa-xpack/actions?query=workflow%3A%22CI+on+Push%22)
 
-# A source library xPack with µOS++ Cortex-A definitions
+# A source library xPack with µOS++ Cortex-A devices definitions
 
 Due to the CMSIS design, some Cortex-A architecture definitions are
 available only via the vendor specific device headers, so they
@@ -101,9 +101,13 @@ To integrate this package into user projects, consider the following details:
 
 #### Source folders
 
-- `src`
+The source files to be added are:
 
-The source file to be added to user projects is: `devices-cortexa.cpp`.
+- `src/startup/initialize-hardware-early.c`
+- `src/startup/initialize-hardware.c`
+- `src/startup/initialize-interrupts-stack.cpp`
+- `src/startup/terminate.cpp`
+- `src/exception-handlers.cpp`
 
 #### Include folders
 
@@ -112,7 +116,8 @@ The source file to be added to user projects is: `devices-cortexa.cpp`.
 The header file to be included in user project is:
 
 ```c++
-#include <micro-os-plus/devices-cortexa.h>
+#include <micro-os-plus/architecture-cortexa/startup/hooks.h>
+#include <micro-os-plus/architecture-cortexa/exception.h>
 ```
 
 #### Preprocessor definitions
@@ -126,11 +131,11 @@ The header file to be included in user project is:
 
 #### C++ Namespaces
 
-TBD
+- none
 
 #### C++ Classes
 
-TBD
+- none
 
 ### Examples
 

@@ -119,30 +119,13 @@ CppStyle plug-in.
 
 ## How to publish
 
-### Prepare a new blog post
-
-In the `micro-os-plus/web-jekyll` GitHub repo:
-
-- select the `develop` branch
-- add a new file to `_posts/devices-cortexa/releases`
-- name the file like `2020-12-19-devices-cortexa-v0-1-0-released.md`
-- name the post like: **µOS++ devices-cortexa v3.0.0 released**
-- update the `date:` field with the current date
-- update the GitHub Actions URLs using the actual test pages
-
-If any, refer to closed
-[issues](https://github.com/micro-os-plus/devices-cortexa-xpack/issues/)
-as:
-
-- **[Issue:\[#1\]\(...\)]**.
-
 ### Publish on the npmjs.com server
 
 - select the `xpack-develop` branch
 - commit all changes
 - update versions in `README.md` and `README-MAINTAINER.md`
 - update `CHANGELOG.md`
-- commit with a message like _prepare v3.0.0_
+- commit with a message like _prepare v1.0.0_
 - `npm pack` and check the content of the archive, which should list
   only `package.json`, `README.md`, `LICENSE`, `CHANGELOG.md`,
   the sources and CMake/meson files;
@@ -173,17 +156,5 @@ When the package is considered stable:
 When the release is considered stable, promote it as `latest`:
 
 - `npm dist-tag ls @micro-os-plus/devices-cortexa`
-- `npm dist-tag add @micro-os-plus/devices-cortexa@3.0.0 latest`
+- `npm dist-tag add @micro-os-plus/devices-cortexa@1.0.0 latest`
 - `npm dist-tag ls @micro-os-plus/devices-cortexa`
-
-## Announce to the community
-
-Post an announcement to the forum.
-
-## Share on Twitter
-
-- in a separate browser windows, open [TweetDeck](https://tweetdeck.twitter.com/)
-- using the `@micro_os_plus` account
-- paste the release name like **µOS++ devices-cortexa v3.0.0 released**
-- paste the link to the Web page release
-- click the **Tweet** button
