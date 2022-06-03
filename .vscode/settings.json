@@ -1,6 +1,31 @@
 {
+  "editor.rulers": [
+    80
+  ],
   "cSpell.ignoreWords": [
+    "Ionescu",
+    "Kinetis",
+    "Liviu",
+    "NOTREACHED",
+    "POSIX",
+    "buildtype",
+    "cmake",
+    "cmsis",
     "cortexa",
-    "xpack"
-  ]
+    "cortexm",
+    "ctest",
+    "eabi",
+    "minsize",
+    "mkdir",
+    "newlib",
+    "npmignore",
+    "npmjs",
+    "postversion",
+    "semihosting",
+    "spsr",
+    "subdir",
+    "xpack",
+    "xpacks"
+  ],
+  "cmake.configureOnOpen": false
 }
