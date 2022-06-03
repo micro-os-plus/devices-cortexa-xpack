@@ -1,2 +1,4 @@
 # devices-cortexa-xpack
-A source library xPack with µOS++ Cortex-A devices support
+
+This project does not use the `master` branch, please
+switch to the `xpack` branch to get the project files.
