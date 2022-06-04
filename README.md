@@ -153,6 +153,18 @@ on each push.
 The tests run on GNU/Linux, macOS and Windows, are compiled with GCC,
 clang and arm-none-eabi-gcc and run natively or via QEMU.
 
+## Change log - incompatible changes
+
+According to [semver](https://semver.org) rules:
+
+> Major version X (X.y.z | X > 0) MUST be incremented if any
+backwards incompatible changes are introduced to the public API.
+
+The incompatible changes, in reverse chronological order,
+are:
+
+- TBD
+
 ## License
 
 The original content is released under the
