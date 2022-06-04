@@ -163,7 +163,7 @@ backwards incompatible changes are introduced to the public API.
 The incompatible changes, in reverse chronological order,
 are:
 
-- TBD
+- v1.x: initial release
 
 ## License
 
