@@ -99,9 +99,9 @@ On embedded platforms, the test applications should be built with
 
 To integrate this package into user projects, consider the following details:
 
-#### Source folders
+#### Source files
 
-The source files to be added are:
+The source files to be added to user projects are:
 
 - `src/startup/initialize-hardware-early.c`
 - `src/startup/initialize-hardware.c`
@@ -111,9 +111,11 @@ The source files to be added are:
 
 #### Include folders
 
+The following folders should be passed to the compiler during the build:
+
 - `include`
 
-The header file to be included in user project is:
+The header files to be included in user projects are:
 
 ```c++
 #include <micro-os-plus/architecture-cortexa/startup/hooks.h>
@@ -122,7 +124,7 @@ The header file to be included in user project is:
 
 #### Preprocessor definitions
 
-- none required
+- none
 
 #### Compiler options
 
