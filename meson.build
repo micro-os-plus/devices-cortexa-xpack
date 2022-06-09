@@ -41,7 +41,8 @@ micro_os_plus_devices_cortexa_dependency = declare_dependency(
   compile_args: [
   ],
   dependencies: [
-    micro_os_plus_semihosting_dependency
+    # micro_os_plus_semihosting_dependency
+    micro_os_plus_diag_trace_dependency
   ]
 )
 

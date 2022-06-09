@@ -70,7 +70,8 @@ target_compile_options(micro-os-plus-devices-cortexa-interface INTERFACE
 
 target_link_libraries(micro-os-plus-devices-cortexa-interface INTERFACE
   # Dependencies
-  micro-os-plus::semihosting
+  # micro-os-plus::semihosting
+  micro-os-plus::diag-trace
 )
 
 if (COMMAND xpack_display_target_lists)
