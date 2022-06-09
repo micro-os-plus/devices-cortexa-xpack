@@ -37,8 +37,6 @@ micro_os_plus_devices_cortexa_dependency = declare_dependency(
     'src/startup/initialize-hardware.c',
     'src/startup/initialize-interrupts-stack.cpp',
     'src/startup/terminate.cpp',
-
-    'src/exception-handlers.cpp',
   ),
   compile_args: [
   ],

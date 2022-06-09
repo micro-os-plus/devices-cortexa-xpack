@@ -58,8 +58,6 @@ target_sources(micro-os-plus-devices-cortexa-interface INTERFACE
   "src/startup/initialize-hardware.c"
   "src/startup/initialize-interrupts-stack.cpp"
   "src/startup/terminate.cpp"
-
-  "src/exception-handlers.cpp"
 )
 
 target_compile_definitions(micro-os-plus-devices-cortexa-interface INTERFACE
