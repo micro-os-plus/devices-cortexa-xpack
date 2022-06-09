@@ -18,6 +18,8 @@
 #include <micro-os-plus/config.h>
 #endif // MICRO_OS_PLUS_INCLUDE_CONFIG_H
 
+#if defined(MICRO_OS_PLUS_INCLUDE_STARTUP)
+
 #include <micro-os-plus/startup/hooks.h>
 #include <micro-os-plus/device.h>
 
@@ -40,6 +42,8 @@ void __attribute__ ((weak)) micro_os_plus_startup_initialize_hardware (void)
 {
   // TODO
 }
+
+#endif // defined(MICRO_OS_PLUS_INCLUDE_STARTUP)
 
 // ----------------------------------------------------------------------------
 

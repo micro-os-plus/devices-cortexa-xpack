@@ -18,10 +18,10 @@
 #include <micro-os-plus/config.h>
 #endif // MICRO_OS_PLUS_INCLUDE_CONFIG_H
 
+#if defined(MICRO_OS_PLUS_INCLUDE_STARTUP)
+
 #include <micro-os-plus/device.h>
 #include <micro-os-plus/startup/hooks.h>
-
-#if !defined(MICRO_OS_PLUS_USE_SEMIHOSTING_SYSCALLS)
 
 /**
  * @details
@@ -33,11 +33,12 @@ void __attribute__ ((noreturn, weak))
 micro_os_plus_terminate (int code __attribute__ ((unused)))
 {
   // TODO
-  while(1) ;
+  while (1)
+    ;
   /* NOTREACHED */
 }
 
-#endif // !defined(MICRO_OS_PLUS_USE_SEMIHOSTING_SYSCALLS)
+#endif // defined(MICRO_OS_PLUS_INCLUDE_STARTUP)
 
 // ----------------------------------------------------------------------------
 
