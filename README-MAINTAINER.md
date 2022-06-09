@@ -125,7 +125,7 @@ CppStyle plug-in.
 - commit all changes
 - update versions in `README.md` and `README-MAINTAINER.md`
 - update `CHANGELOG.md`
-- commit with a message like _prepare v1.0.0_
+- commit with a message like _prepare v2.0.0_
 - `npm pack` and check the content of the archive, which should list
   only `package.json`, `README.md`, `LICENSE`, `CHANGELOG.md`,
   the sources and CMake/meson files;
@@ -156,13 +156,13 @@ When the package is considered stable:
 When the release is considered stable, promote it as `latest`:
 
 - `npm dist-tag ls @micro-os-plus/devices-cortexa`
-- `npm dist-tag add @micro-os-plus/devices-cortexa@1.0.0 latest`
+- `npm dist-tag add @micro-os-plus/devices-cortexa@2.0.0 latest`
 - `npm dist-tag ls @micro-os-plus/devices-cortexa`
 
 ## Share on Twitter
 
 - in a separate browser windows, open [TweetDeck](https://tweetdeck.twitter.com/)
 - using the `@micro_os_plus` account
-- paste the release name like **µOS++ devices-cortexa v1.0.0 released**
+- paste the release name like **µOS++ devices-cortexa v2.0.0 released**
 - paste the link to the Web page release
 - click the **Tweet** button

@@ -107,7 +107,6 @@ The source files to be added to user projects are:
 - `src/startup/initialize-hardware.c`
 - `src/startup/initialize-interrupts-stack.cpp`
 - `src/startup/terminate.cpp`
-- `src/exception-handlers.cpp`
 
 #### Include folders
 
@@ -119,12 +118,11 @@ The header files to be included in user projects are:
 
 ```c++
 #include <micro-os-plus/architecture-cortexa/startup/hooks.h>
-#include <micro-os-plus/architecture-cortexa/exception.h>
 ```
 
 #### Preprocessor definitions
 
-- none
+- `MICRO_OS_PLUS_INCLUDE_STARTUP`
 
 #### Compiler options
 
@@ -165,6 +163,7 @@ backwards incompatible changes are introduced to the public API.
 The incompatible changes, in reverse chronological order,
 are:
 
+- v2.x: move exception-handlers to qemu device
 - v1.x: initial release
 
 ## License
