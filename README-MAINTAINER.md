@@ -136,8 +136,8 @@ No need to add a tag here, it'll be added when the release is created.
 
 ### Increase the version
 
-Determine the upstream version (like `4.0.0`) and update the `package.json`
-file; the format is `4.0.0-pre`.
+Determine the upstream version (like `4.0.0`) and eventually update the
+`package.json` file; the format is `4.0.0-pre`.
 
 ### Fix possible open issues
 
@@ -188,6 +188,9 @@ xpm run test-all
 - the `postversion` npm script should also update tags via `git push origin --tags`
 - wait for the CI job to complete
   (<https://github.com/micro-os-plus/devices-cortexa-xpack/actions/workflows/CI.yml>)
+
+### Publish
+
 - `npm publish --tag next` (use `npm publish --access public` when
   publishing for the first time)
 
