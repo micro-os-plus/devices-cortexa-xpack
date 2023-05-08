@@ -39,6 +39,7 @@ micro_os_plus_devices_cortexa_dependency = declare_dependency(
     'src/startup/terminate.cpp',
   ),
   compile_args: [
+    # None.
   ],
   dependencies: [
     # micro_os_plus_semihosting_dependency
