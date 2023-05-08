@@ -166,10 +166,8 @@ related to the new version.
 To run the tests manually on the local machine:
 
 ```sh
-cd ~Work/devices-cortexa-xpack.git
-
-xpm run install-all
-xpm run test-all
+xpm run install-all -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
+xpm run test-all -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 ### Publish on the npmjs.com server
