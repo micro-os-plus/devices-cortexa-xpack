@@ -26,22 +26,22 @@ To clone the stable branch (`xpack`), run the following commands in a
 terminal (on Windows use the _Git Bash_ console):
 
 ```sh
-rm -rf ~/Work/devices-cortexa-xpack.git && \
-mkdir -p ~/Work && \
+rm -rf ~/Work/micro-os-plus/devices-cortexa-xpack.git && \
+mkdir -p ~/Work/micro-os-plus && \
 git clone \
   https://github.com/micro-os-plus/devices-cortexa-xpack.git \
-  ~/Work/devices-cortexa-xpack.git
+  ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 For development purposes, clone the `xpack-develop` branch:
 
 ```sh
-rm -rf ~/Work/devices-cortexa-xpack.git && \
-mkdir -p ~/Work && \
+rm -rf ~/Work/micro-os-plus/devices-cortexa-xpack.git && \
+mkdir -p ~/Work/micro-os-plus && \
 git clone \
   --branch xpack-develop \
   https://github.com/micro-os-plus/devices-cortexa-xpack.git \
-  ~/Work/devices-cortexa-xpack.git
+  ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 ## Development setup
@@ -53,8 +53,7 @@ if you have older versions of the xPack installed, sometimes updates may fail
 to get the latest version. To fix this remove all global packages by using
 
 ```sh
-cd ~/Work/devices-cortexa-xpack.git
-xpm run rm-global-deps
+xpm run rm-global-deps -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 and repeat the steps from `xpm install`.
@@ -64,8 +63,7 @@ and repeat the steps from `xpm install`.
 With a clean slate, install dependencies:
 
 ```sh
-cd ~/Work/devices-cortexa-xpack.git
-xpm run install-all
+xpm run install-all -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 ## Run tests
@@ -75,8 +73,7 @@ The project includes unit tests.
 To perform the tests, run the usual xpm sequence:
 
 ```sh
-cd ~/Work/devices-cortexa-xpack.git
-xpm run test-all
+xpm run test-all -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
 ### Clone writeable dependencies
