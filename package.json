@@ -1,7 +1,7 @@
 {
   "name": "@micro-os-plus/devices-cortexa",
   "version": "2.0.0",
-  "description": "A source library xPack with µOS++ Cortex-A devices support",
+  "description": "A source code library with µOS++ Cortex-A devices support",
   "main": "",
   "scripts": {
     "npm-install": "npm install",
