@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/github/license/micro-os-plus/devices-cortexa-xpack)](https://github.com/micro-os-plus/devices-cortexa-xpack/blob/xpack/LICENSE)
 [![CI on Push](https://github.com/micro-os-plus/devices-cortexa-xpack/actions/workflows/ci.yml/badge.svg)](https://github.com/micro-os-plus/devices-cortexa-xpack/actions/workflows/ci.yml)
 
-# A source library xPack with µOS++ Cortex-A devices definitions
+# A source code library with µOS++ Cortex-A devices definitions
 
 Due to the CMSIS design, some Cortex-A architecture definitions are
 available only via the vendor specific device headers, so they
@@ -177,7 +177,7 @@ are:
 
 ## License
 
-The original content is released under the
-[MIT License](https://opensource.org/licenses/MIT/),
+Unless otherwise stated, the content is released under the terms of the
+[MIT License](https://opensource.org/licenses/mit/),
 with all rights reserved to
 [Liviu Ionescu](https://github.com/ilg-ul).
