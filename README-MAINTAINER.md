@@ -33,7 +33,7 @@ git clone \
   ~/Work/micro-os-plus/devices-cortexa-xpack.git
 ```
 
-For development purposes, clone the `xpack-develop` branch:
+For development purposes, clone the development branch (`xpack-develop`):
 
 ```sh
 rm -rf ~/Work/micro-os-plus/devices-cortexa-xpack.git && \
@@ -80,7 +80,7 @@ xpm run test-all -C ~/Work/micro-os-plus/devices-cortexa-xpack.git
 
 The above procedure will allow to develop the project itself, but the
 dependencies will be read-only; to be able to contribute to them,
-also clone the `xpack-develop` branches of all µOS++ source xPacks
+also clone the development branch (`xpack-develop`)es of all µOS++ source xPacks
 into a folder of your choice and link them to the central xPacks
 folder by running `xpack link` in each folder.
 
